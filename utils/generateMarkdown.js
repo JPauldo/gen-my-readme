@@ -81,6 +81,19 @@ This repo utilizes the ${license} license. If you would like to know more inform
   }
 }
 
+function renderUsageSection(usageDesc) {
+  let usageText;
+  if (usageDesc !== '') {
+    usageText = `To use this application, ${usageDesc}`;
+    return usageText;
+  } else {
+    usageText = `It is quite intuitive. Why not just give it a try?`;
+    return usageText;
+  }
+}
+
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -107,6 +120,8 @@ ${data.dependencies}
 \`\`\`
 
 ## Usage
+
+${renderUsageSection(data.usage)}
 
 Below is a demonstration of the application: 
 
