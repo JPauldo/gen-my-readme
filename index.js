@@ -29,7 +29,7 @@ const questions = [
     type: 'list',
     message: 'What kind of license should your project have?',
     name: 'license',
-    choices: ['Apache', 'Boost Software', 'GNU AGPLv3', 'MIT', 'Mozilla Public', 'None']
+    choices: ['Apache', 'Boost Software', 'GNU', 'MIT', 'Mozilla', 'None']
   },
   {
     type: 'input',

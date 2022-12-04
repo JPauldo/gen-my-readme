@@ -1,7 +1,43 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  return '';
+  let badgeLink;
+  let badgeColor;
+  
+  switch(license) {
+    case 'Apache':
+      license += ' License 2.0';
+      badgeColor = 'blueviolet';
+      break;
+    case 'Boost Software':
+      license += ' License 1.0';
+      badgeColor = 'blue';
+      break;
+    case 'GNU':
+      license += ' General Public License v3.0';
+      badgeColor = 'brightgreen';
+      break;
+    case 'MIT':
+      license += ' License';
+      badgeColor = 'red';
+      break;
+    case 'Mozilla':
+      license += ' Public License 2.0';
+      badgeColor = 'orange';
+      break;
+    default:
+      return '';
+  }
+  let licenseName = license;
+  console.log(licenseName, license);
+  if(license.includes(' ')) {
+    license = license.replaceAll(' ', '%20');
+    console.log(licenseName, license);
+  }
+  
+  badgeLink = `![${license} Badge](https://img.shields.io/badge/License-${license}-${badgeColor})`;
+  
+  return badgeLink;
 }
 
 // TODO: Create a function that returns the license link

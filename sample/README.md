@@ -1,10 +1,10 @@
-# Generate My README
+# My Resume Builder
 
 
 
 ## Description
 
-This application will generate a README.
+It will build you a resume.
 
 ## Table of Contents
 
@@ -38,6 +38,6 @@ npm test
 
 ## How to Contribute
 
-If you would like to contribute, feel free to reach out to me at [jdpauldo94@gmail.com](mailto:jdpauldo94@gmail.com).
+If you would like to contribute, feel free to reach out to me at [crodgers@email.com](mailto:crodgers@email.com).
 
-If you like what you see here, please feel free to checkout my other work on [my Github page](https://github.com/JPauldo).
+If you like what you see here, please feel free to checkout my other work on [my Github page](https://github.com/CraigR).
