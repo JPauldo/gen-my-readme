@@ -1,6 +1,6 @@
 # My Resume Builder
 
-
+![Boost%20Software%20License%201.0 Badge](https://img.shields.io/badge/License-Boost%20Software%20License%201.0-blue)
 
 ## Description
 
@@ -27,7 +27,9 @@ Below is a demonstration of the application:
 
 ![Alt Text for Placeholder](https://via.placeholder.com/150)
 
+## License
 
+This repo utilizes the Boost Software license. If you would like to know more information, you can check out its [license page](https://choosealicense.com/licenses/bsl-1.0/) for its permissions, conditions and limitations.
 
 ## Tests
 
@@ -38,6 +40,6 @@ npm test
 
 ## How to Contribute
 
-If you would like to contribute, feel free to reach out to me at [crodgers@email.com](mailto:crodgers@email.com).
+If you would like to contribute, feel free to reach out to me at [crodgers@hotmail.com](mailto:crodgers@hotmail.com).
 
 If you like what you see here, please feel free to checkout my other work on [my Github page](https://github.com/CraigR).
