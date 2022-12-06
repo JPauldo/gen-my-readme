@@ -7,16 +7,6 @@ const markdown = require('./utils/generateMarkdown');
 const questions = [
   {
     type: 'input',
-    message: 'What is your Github username?',
-    name: 'username'
-  },
-  {
-    type: 'input',
-    message: 'What is your email address?',
-    name: 'email'
-  },
-  {
-    type: 'input',
     message: 'What is your project\'s name?',
     name: 'title'
   },
@@ -50,22 +40,25 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'What does the user need to know about contributing to the repo?',
-    name: 'contribute'
+    message: 'What is your Github username?',
+    name: 'username'
+  },
+  {
+    type: 'input',
+    message: 'What is your email address?',
+    name: 'email'
   }
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   let path = './sample';
-  console.log(fs.existsSync(path));
   if(!fs.existsSync(path)) {
     fs.mkdirSync(path);
-    console.log(fs.existsSync(path));
   }
   path += '/' + fileName;
   fs.writeFile(path, markdown(data), (err) =>
-    err ? console.error(err) : console.log('Success!')
+    err ? console.error(err) : console.log('Generated README in Sample folder.')
   );
 }
 

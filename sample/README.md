@@ -1,10 +1,10 @@
-# My Resume Builder
+# Sample README
 
 ![Apache%20License%202.0 Badge](https://img.shields.io/badge/License-Apache%20License%202.0-blueviolet)
 
 ## Description
 
-It will build you a resume.
+This is an example of a generated README.
 
 ## Table of Contents
 

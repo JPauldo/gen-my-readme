@@ -28,11 +28,9 @@ function renderLicenseBadge(license) {
     default:
       return '';
   }
-  let licenseName = license;
-  console.log(licenseName, license);
+  
   if(license.includes(' ')) {
     license = license.replaceAll(' ', '%20');
-    console.log(licenseName, license);
   }
   
   badgeLink = `![${license} Badge](https://img.shields.io/badge/License-${license}-${badgeColor})`;
