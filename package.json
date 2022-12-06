@@ -1,0 +1,23 @@
+{
+  "name": "gen-my-readme",
+  "version": "1.0.0",
+  "description": "Generate My README is a simple README generator. Just answer a handful of straightforward questions and projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPauldo/gen-my-readme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPauldo/gen-my-readme/issues"
+  },
+  "homepage": "https://github.com/JPauldo/gen-my-readme#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
+}
