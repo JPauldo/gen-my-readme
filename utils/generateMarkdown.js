@@ -1,9 +1,13 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+/**
+ * Renders the license badge based on which license is passed in. If there is no license, return an empty string.
+ * @param {string} license The name of the license
+ * @returns {string} The badge for the license
+ */
 function renderLicenseBadge(license) {
   let badgeLink;
   let badgeColor;
   
+  // Sets the badge color and license name
   switch(license) {
     case 'Apache':
       license += ' License 2.0';
@@ -29,6 +33,7 @@ function renderLicenseBadge(license) {
       return '';
   }
   
+  // Replaces spaces in the license names for the link
   if(license.includes(' ')) {
     license = license.replaceAll(' ', '%20');
   }
@@ -38,11 +43,15 @@ function renderLicenseBadge(license) {
   return badgeLink;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+/**
+ * Creates the license link. 
+ * @param {string} license The name of the license
+ * @returns {string} The link for the license
+ */
 function renderLicenseLink(license) {
   let licenseText;
 
+  // Sets the license text for the link
   switch(license) {
     case 'Apache':
       licenseText = 'apache-2.0';
@@ -63,8 +72,11 @@ function renderLicenseLink(license) {
   
   return `[license page](https://choosealicense.com/licenses/${licenseText}/)`;}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+/**
+ * Renders the license section of README. If there is no license, return an empty string.
+ * @param {string} license The name of the license
+ * @returns {string} The HTML for the license section
+ */
 function renderLicenseSection(license) {
   if (license !== 'None') {    
     let licenseLink = renderLicenseLink(license);
@@ -79,8 +91,15 @@ This repo utilizes the ${license} license. If you would like to know more inform
   }
 }
 
+/**
+ * Renders the Usage section for the README. If no user input was provided, returns a generic description.
+ * @param {string} usageDesc A description provided by the user
+ * @returns {string} The HTML for the usage section
+ */
 function renderUsageSection(usageDesc) {
   let usageText;
+  
+  // 
   if (usageDesc !== '') {
     usageText = `To use this application, ${usageDesc}`;
     return usageText;
@@ -92,7 +111,11 @@ function renderUsageSection(usageDesc) {
 
 
 
-// TODO: Create a function to generate markdown for README
+/**
+ * Formats and generates a README.
+ * @param {object} data The response from the inquire
+ * @returns {string} The formatted markdown
+ */
 function generateMarkdown(data) {
   return `# ${data.title}
 
